@@ -1,0 +1,31 @@
+.nav{
+    color: darken($color-white, 20%) ;
+   
+    .container{
+        @include flex;
+    }
+    &__list{
+        @include flex;
+        @include responsive(desktop) {
+            display: none;
+        }
+    }
+    &__item{
+        margin-right: 15px;
+    }
+    &__link{
+        padding: 5px;
+        @include transition(color);
+        &:hover{
+            color: $color-white;
+        }
+    }
+    &__right{
+        margin-left: auto;
+        @include responsive (desktop) {
+            display: none;
+        }
+        
+        }
+       
+}

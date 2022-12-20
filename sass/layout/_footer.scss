@@ -1,0 +1,59 @@
+.footer{
+    font-size: 16px;
+    @include responsive(desktop){
+        font-size: 14px;
+    }
+    background-color: $color-bg-2;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    border-radius: 200px 200px 0 0 ;
+    @include responsive (tab) {
+        border-radius: 100px 100px 0 0 ;
+    }
+    @include responsive (phone) {
+        border-radius: 100px 100px 0 0 ;
+    }
+    .container{
+        position: relative;
+        @include responsive(lg-desktop){
+            padding: 0 10px;
+            @include responsive (tab) {
+            text-align: center;
+            }
+            @include responsive (phone) {
+                text-align: left;
+                }
+        }
+    }
+    &__text-box{
+        @include responsive (tab) {
+            width: 100%;
+        }
+        width: 45%;
+    }
+
+    &__list-box{
+        width: 50%;
+        @include responsive (tab) {
+            width: 100%;
+            margin-top: 40px;
+        }
+        @include responsive (tab) {
+            margin-bottom: 40px;
+        }
+        li:not(:last-child){
+            margin-bottom: 5px;
+        }
+    }
+
+    &__download{
+        width: 100%;
+        .download-link{
+            display: inline-block;
+        }
+    }
+    &__copy-right{
+        width: 100%;
+        text-align: center;
+    }
+}

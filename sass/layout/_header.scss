@@ -1,0 +1,10 @@
+.header{
+   padding: {
+        top:60px;
+        bottom: 250px;
+    }
+    @include responsive(phone){
+        padding-top: 40px;
+        border-radius: 0 0 100px 100px ;
+    }
+}
